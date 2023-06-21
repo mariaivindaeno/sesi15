@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projek</title>
+</head>
+<body>
+   <div>
+    <div>
+        celcius
+        <input type="number" id="C"
+    </div>
+    <div>
+        fahrenheit
+        <input type="number" id="F"
+    </div>
+    <div>
+        kelvin
+        <input type="number" id="K"
+    </div>
+   </div> 
+
+   <script src="jquery-3.7.0.min.js"></script>
+   <script>
+       $(function(){
+        $("#C").on("input", function(){
+            console.log("Nilai Dari C: "+$("#C").val() );
+            let tx = "Hitung nilai dari Celcius "+C;
+                    tx +=" ⁰F = (9/5) × ⁰C + 32"
+                    $(".hasil").html(tx);
+
+        });
+
+        $("#F").on("input", function(){
+            console.log("Nilai Dari F: "+ $("#F").val() );
+
+            })
+
+            $("#K").on("input", function(){
+                console.log("Nilai Dari K: "+ $("#K").val() );
+    
+                })
+        });
+
+
+        
+   </script>
+</body>
+</html>
